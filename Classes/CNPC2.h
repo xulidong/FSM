@@ -1,30 +1,30 @@
 //
-//  CNPC.h
+//  CNPC2.h
 //  codeplace
 //
-//  Created by user on 14-4-8.
+//  Created by user on 14-4-9.
 //
 //
 
-#ifndef __codeplace__CNPC__
-#define __codeplace__CNPC__
+#ifndef __codeplace__CNPC2__
+#define __codeplace__CNPC2__
 
 #include <iostream>
 #include "cocos2d.h"
-
-class CBaseState;
+#include "CFSM.h"
 
 using namespace std;
 USING_NS_CC;
 
-class CNPC:public CCNode{
+class CBaseState2;
+
+class CNPC2:public CCNode{
 public:
-    ~CNPC();
+    ~CNPC2();
     
-    CREATE_FUNC(CNPC);
+    CREATE_FUNC(CNPC2);
     virtual bool init();
     
-    void changeToState(CBaseState *pBaseState);
     void onStateOne();
     void onStateTwo();
     void onStateThree();
@@ -33,8 +33,10 @@ public:
     bool checkStateThree();
     
     virtual void update(float dt);
+    
+    CFSM* getFSM();
+    
 protected:
-    CBaseState* m_cCurState;
+    CFSM* m_pFSM;
 };
-
-#endif /* defined(__codeplace__CNPC__) */
+#endif /* defined(__codeplace__CNPC2__) */

@@ -9,6 +9,11 @@
 #include "CNPC.h"
 #include "CBaseState.h"
 
+CNPC::~CNPC(){
+
+    CC_SAFE_DELETE(m_cCurState);
+}
+
 bool CNPC::init(){
     
     if (!CCNode::init()) {

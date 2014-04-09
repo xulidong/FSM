@@ -1,7 +1,9 @@
 #include "HelloWorldScene.h"
 #include "CNPCNode.h"
 #include "CNPC.h"
-#include "CStateOne.h"
+#include "CNPC2.h"
+//#include "CStateOne.h"
+#include "CStateOne2.h"
 
 USING_NS_CC;
 
@@ -80,8 +82,13 @@ bool HelloWorld::init()
 //    CNPCNode* pNPCNode = CNPCNode::create();
 //    pNPCNode->changeToState(eState_One);
 //    this->addChild(pNPCNode);
-    CNPC* pNPC = CNPC::create();
-    pNPC->changeToState(new CStateOne);
+    
+//    CNPC* pNPC = CNPC::create();
+//    pNPC->changeToState(new CStateOne);
+//    this->addChild(pNPC);
+    
+    CNPC2* pNPC = CNPC2::create();
+    pNPC->getFSM()->changeToState(new CStateOne2);
     this->addChild(pNPC);
     
     return true;
