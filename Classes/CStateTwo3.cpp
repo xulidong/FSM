@@ -8,17 +8,17 @@
 
 #include "CStateTwo3.h"
 #include "CNPC3.h"
-#include "CStateOne3.h"
 #include "CStateThree3.h"
 
 void CStateTwo3::execute(CNPC3* pNPC, EMsgType eMsgType){
+    // 只处理自己关心的消息
+    switch (eMsgType) {
+        case eMsgType_Two:
+            pNPC->onStateTwo();
+            pNPC->getFSM()->changeToState(new CStateThree3);
+            break;
     
-    pNPC->onStateTwo();
-    
-    if (pNPC->checkStateOne()) {
-        pNPC->getFSM()->changeToState(new CStateOne3());
-    }
-    else if (pNPC->checkStateThree()) {
-        pNPC->getFSM()->changeToState(new CStateThree3());
+        default:
+            break;
     }
 }

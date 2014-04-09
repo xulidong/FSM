@@ -11,7 +11,9 @@
 
 #include <iostream>
 #include "cocos2d.h"
-
+/*
+ 在不同的状态（状态类）下，只处理自己关心的消息（消息枚举）
+ */
 #define NOTIFY CCNotificationCenter::sharedNotificationCenter()
 #define MSG_ONE "kMessage1"
 #define MSG_TWO "kMessage2"
