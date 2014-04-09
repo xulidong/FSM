@@ -1,9 +1,11 @@
 #include "HelloWorldScene.h"
-#include "CNPCNode.h"
-#include "CNPC.h"
-#include "CNPC2.h"
+//#include "CNPCNode.h"
+//#include "CNPC.h"
+//#include "CNPC2.h"
+#include "CNPC3.h"
 //#include "CStateOne.h"
-#include "CStateOne2.h"
+//#include "CStateOne2.h"
+#include "CStateOne3.h"
 
 USING_NS_CC;
 
@@ -87,8 +89,21 @@ bool HelloWorld::init()
 //    pNPC->changeToState(new CStateOne);
 //    this->addChild(pNPC);
     
-    CNPC2* pNPC = CNPC2::create();
-    pNPC->getFSM()->changeToState(new CStateOne2);
+//    CNPC2* pNPC = CNPC2::create();
+//    pNPC->getFSM()->changeToState(new CStateOne2);
+//    this->addChild(pNPC);
+    
+    CNPC3* pNPC = CNPC3::create();
+    pNPC->getFSM()->changeToState(new CStateOne3);
+    /* 模拟事件的发生 */
+    NOTIFY->postNotification(MSG_ONE);
+    NOTIFY->postNotification(MSG_THREE);
+    NOTIFY->postNotification(MSG_TWO);
+    NOTIFY->postNotification(MSG_THREE);
+    NOTIFY->postNotification(MSG_ONE);
+    NOTIFY->postNotification(MSG_TWO);
+    NOTIFY->postNotification(MSG_ONE);
+    NOTIFY->postNotification(MSG_THREE);
     this->addChild(pNPC);
     
     return true;

@@ -15,7 +15,7 @@ void CStateThree::execute(CNPC* pNPC){
     
     pNPC->onStateThree();
     
-    if (pNPC->checkStateTwo()) {
+    if (pNPC->checkStateOne()) {
         pNPC->changeToState(new CStateOne());
     }
     else if (pNPC->checkStateThree()) {

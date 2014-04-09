@@ -239,6 +239,12 @@
 		CE93A10318F4F1190034C319 /* CStateOne2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A10218F4F1190034C319 /* CStateOne2.cpp */; };
 		CE93A10618F4F1270034C319 /* CStateThree2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A10518F4F1270034C319 /* CStateThree2.cpp */; };
 		CE93A10918F4F1300034C319 /* CStateTwo2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A10818F4F1300034C319 /* CStateTwo2.cpp */; };
+		CE93A10F18F4FDD50034C319 /* CEventFSM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A10D18F4FDD50034C319 /* CEventFSM.cpp */; };
+		CE93A11D18F5020C0034C319 /* CStateThree3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A11518F5020C0034C319 /* CStateThree3.cpp */; };
+		CE93A11E18F5020C0034C319 /* CStateTwo3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A11618F5020C0034C319 /* CStateTwo3.cpp */; };
+		CE93A11F18F5020C0034C319 /* CStateOne3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A11718F5020C0034C319 /* CStateOne3.cpp */; };
+		CE93A12018F5020C0034C319 /* CBaseState3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A11B18F5020C0034C319 /* CBaseState3.cpp */; };
+		CE93A12718F504B40034C319 /* CNPC3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A12518F504B40034C319 /* CNPC3.cpp */; };
 		CED0B39118F4102C004997E5 /* CNPCNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED0B38F18F4102C004997E5 /* CNPCNode.cpp */; };
 		CED0B39418F41966004997E5 /* CBaseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED0B39218F41966004997E5 /* CBaseState.cpp */; };
 		CED0B39718F419E9004997E5 /* CStateOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED0B39518F419E9004997E5 /* CStateOne.cpp */; };
@@ -748,6 +754,19 @@
 		CE93A10818F4F1300034C319 /* CStateTwo2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CStateTwo2.cpp; path = ../Classes/CStateTwo2.cpp; sourceTree = "<group>"; };
 		CE93A10A18F4F1350034C319 /* CStateTwo2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CStateTwo2.h; path = ../Classes/CStateTwo2.h; sourceTree = "<group>"; };
 		CE93A10B18F4F15B0034C319 /* CStateThree2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CStateThree2.h; path = ../Classes/CStateThree2.h; sourceTree = "<group>"; };
+		CE93A10D18F4FDD50034C319 /* CEventFSM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CEventFSM.cpp; path = ../Classes/CEventFSM.cpp; sourceTree = "<group>"; };
+		CE93A10E18F4FDD50034C319 /* CEventFSM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEventFSM.h; path = ../Classes/CEventFSM.h; sourceTree = "<group>"; };
+		CE93A11318F4FEF70034C319 /* EMsgType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EMsgType.h; path = ../Classes/EMsgType.h; sourceTree = "<group>"; };
+		CE93A11518F5020C0034C319 /* CStateThree3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CStateThree3.cpp; path = ../Classes/CStateThree3.cpp; sourceTree = "<group>"; };
+		CE93A11618F5020C0034C319 /* CStateTwo3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CStateTwo3.cpp; path = ../Classes/CStateTwo3.cpp; sourceTree = "<group>"; };
+		CE93A11718F5020C0034C319 /* CStateOne3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CStateOne3.cpp; path = ../Classes/CStateOne3.cpp; sourceTree = "<group>"; };
+		CE93A11818F5020C0034C319 /* CStateTwo3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CStateTwo3.h; path = ../Classes/CStateTwo3.h; sourceTree = "<group>"; };
+		CE93A11918F5020C0034C319 /* CStateThree3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CStateThree3.h; path = ../Classes/CStateThree3.h; sourceTree = "<group>"; };
+		CE93A11A18F5020C0034C319 /* CStateOne3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CStateOne3.h; path = ../Classes/CStateOne3.h; sourceTree = "<group>"; };
+		CE93A11B18F5020C0034C319 /* CBaseState3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CBaseState3.cpp; path = ../Classes/CBaseState3.cpp; sourceTree = "<group>"; };
+		CE93A11C18F5020C0034C319 /* CBaseState3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBaseState3.h; path = ../Classes/CBaseState3.h; sourceTree = "<group>"; };
+		CE93A12518F504B40034C319 /* CNPC3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CNPC3.cpp; path = ../Classes/CNPC3.cpp; sourceTree = "<group>"; };
+		CE93A12618F504B40034C319 /* CNPC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNPC3.h; path = ../Classes/CNPC3.h; sourceTree = "<group>"; };
 		CED0B38F18F4102C004997E5 /* CNPCNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CNPCNode.cpp; path = ../Classes/CNPCNode.cpp; sourceTree = "<group>"; };
 		CED0B39018F4102C004997E5 /* CNPCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNPCNode.h; path = ../Classes/CNPCNode.h; sourceTree = "<group>"; };
 		CED0B39218F41966004997E5 /* CBaseState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CBaseState.cpp; path = ../Classes/CBaseState.cpp; sourceTree = "<group>"; };
@@ -1291,6 +1310,7 @@
 				CE93A0F718F4ED2C0034C319 /* switchCase */,
 				CE93A0F618F4ECC20034C319 /* stateModel */,
 				CE93A0F818F4ED4D0034C319 /* FSM */,
+				CE93A10C18F4FB920034C319 /* EventFSM */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1805,6 +1825,26 @@
 			name = FSM;
 			sourceTree = "<group>";
 		};
+		CE93A10C18F4FB920034C319 /* EventFSM */ = {
+			isa = PBXGroup;
+			children = (
+				CE93A11B18F5020C0034C319 /* CBaseState3.cpp */,
+				CE93A11C18F5020C0034C319 /* CBaseState3.h */,
+				CE93A11718F5020C0034C319 /* CStateOne3.cpp */,
+				CE93A11A18F5020C0034C319 /* CStateOne3.h */,
+				CE93A11618F5020C0034C319 /* CStateTwo3.cpp */,
+				CE93A11818F5020C0034C319 /* CStateTwo3.h */,
+				CE93A11518F5020C0034C319 /* CStateThree3.cpp */,
+				CE93A11918F5020C0034C319 /* CStateThree3.h */,
+				CE93A10D18F4FDD50034C319 /* CEventFSM.cpp */,
+				CE93A10E18F4FDD50034C319 /* CEventFSM.h */,
+				CE93A11318F4FEF70034C319 /* EMsgType.h */,
+				CE93A12518F504B40034C319 /* CNPC3.cpp */,
+				CE93A12618F504B40034C319 /* CNPC3.h */,
+			);
+			name = EventFSM;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1995,6 +2035,7 @@
 				15A3DA401682F826002FB0C5 /* CCMenuItemImageLoader.cpp in Sources */,
 				375BD5101868454E0024609E /* CCActionFrameEasing.cpp in Sources */,
 				15A3DA411682F826002FB0C5 /* CCMenuItemLoader.cpp in Sources */,
+				CE93A11F18F5020C0034C319 /* CStateOne3.cpp in Sources */,
 				15A3DA421682F826002FB0C5 /* CCNode+CCBRelativePositioning.cpp in Sources */,
 				15A3DA431682F826002FB0C5 /* CCNodeLoader.cpp in Sources */,
 				CED0B39A18F41A85004997E5 /* CNPC.cpp in Sources */,
@@ -2026,6 +2067,7 @@
 				15A3DA5D1682F826002FB0C5 /* HttpClient.cpp in Sources */,
 				15A3DA5E1682F826002FB0C5 /* CCPhysicsDebugNode.cpp in Sources */,
 				375BD5131868454E0024609E /* CCActionObject.cpp in Sources */,
+				CE93A12018F5020C0034C319 /* CBaseState3.cpp in Sources */,
 				CE93A10318F4F1190034C319 /* CStateOne2.cpp in Sources */,
 				15A3DA5F1682F826002FB0C5 /* CCPhysicsSprite.cpp in Sources */,
 				15A3DAEB1682F8A6002FB0C5 /* CDAudioManager.m in Sources */,
@@ -2039,6 +2081,7 @@
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,
 				1AC3624B16D4A1E8000847F2 /* main.m in Sources */,
 				1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */,
+				CE93A11E18F5020C0034C319 /* CStateTwo3.cpp in Sources */,
 				1A8F3B6E175E05DA00049216 /* Animation.cpp in Sources */,
 				1A8F3B6F175E05DA00049216 /* AnimationState.cpp in Sources */,
 				1A8F3B70175E05DA00049216 /* AnimationStateData.cpp in Sources */,
@@ -2063,6 +2106,7 @@
 				CE93A0FB18F4EDB40034C319 /* CFSM.cpp in Sources */,
 				1A8F3B80175E05DA00049216 /* Slot.cpp in Sources */,
 				1A8F3B81175E05DA00049216 /* SlotData.cpp in Sources */,
+				CE93A12718F504B40034C319 /* CNPC3.cpp in Sources */,
 				1A8F3B82175E05DA00049216 /* spine-cocos2dx.cpp in Sources */,
 				1AB87035175E0A84005D39BF /* WebSocket.cpp in Sources */,
 				375BD4C51868411B0024609E /* TriggerMng.cpp in Sources */,
@@ -2106,7 +2150,9 @@
 				375BD50E1868454E0024609E /* CCActionEaseEx.cpp in Sources */,
 				379BB9C117F03F3700829B88 /* UICheckBox.cpp in Sources */,
 				379BB9C217F03F3700829B88 /* UIImageView.cpp in Sources */,
+				CE93A10F18F4FDD50034C319 /* CEventFSM.cpp in Sources */,
 				CE93A0FE18F4EF790034C319 /* CNPC2.cpp in Sources */,
+				CE93A11D18F5020C0034C319 /* CStateThree3.cpp in Sources */,
 				379BB9C317F03F3700829B88 /* UILabel.cpp in Sources */,
 				379BB9C417F03F3700829B88 /* UILabelAtlas.cpp in Sources */,
 				379BB9C517F03F3700829B88 /* UILabelBMFont.cpp in Sources */,
