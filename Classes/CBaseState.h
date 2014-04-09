@@ -15,6 +15,8 @@ class CNPC;
 
 class CBaseState{
 public:
+    virtual ~CBaseState() = 0;
+    
     virtual void execute(CNPC* pNPC) = 0;
 };
 

@@ -1,22 +1,22 @@
 //
-//  CStateOne.cpp
+//  CStateThree.cpp
 //  codeplace
 //
-//  Created by user on 14-4-8.
+//  Created by user on 14-4-9.
 //
 //
 
-#include "CStateOne.h"
+#include "CStateThree.h"
 #include "CNPC.h"
-#include "CStateTwo.h"
+#include "CStateOne.h"
 #include "CStateThree.h"
 
-void CStateOne::execute(CNPC* pNPC){
+void CStateThree::execute(CNPC* pNPC){
     
-    pNPC->onStateOne();
+    pNPC->onStateThree();
     
     if (pNPC->checkStateTwo()) {
-        pNPC->changeToState(new CStateTwo());
+        pNPC->changeToState(new CStateOne());
     }
     else if (pNPC->checkStateThree()) {
         pNPC->changeToState(new CStateThree());

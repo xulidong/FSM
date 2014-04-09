@@ -7,3 +7,7 @@
 //
 
 #include "CBaseState.h"
+
+CBaseState::~CBaseState(){
+
+}

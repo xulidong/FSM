@@ -15,32 +15,40 @@ bool CNPC::init(){
         return false;
     }
     
-    this->scheduleUpdate();
+    m_cCurState = NULL;
+    
+    scheduleUpdate();
     
     return true;
 }
 
-void CNPC::changeToState(CBaseState* cState){
-    
-    m_cBaseState = cState;
+void CNPC::update(float dt){
+
+    m_cCurState->execute(this);
 }
 
-void CNPCNode::onStateOne(){
+void CNPC::changeToState(CBaseState* cState){
+    
+    CC_SAFE_DELETE(m_cCurState);// 如果基本定义为抽象类，这里会出现警告
+    m_cCurState = cState;
+}
+
+void CNPC::onStateOne(){
     
     CCLog("state 1");
 }
 
-void CNPCNode::onStateTwo(){
+void CNPC::onStateTwo(){
     
     CCLog("state 2");
 }
 
-void CNPCNode::onStateThree(){
+void CNPC::onStateThree(){
     
     CCLog("state 3");
 }
 
-bool CNPCNode::checkStateOne(){
+bool CNPC::checkStateOne(){
     
     if (CCRANDOM_0_1() < 0.5f) {
         return true;
@@ -49,7 +57,7 @@ bool CNPCNode::checkStateOne(){
     return false;
 }
 
-bool CNPCNode::checkStateTwo(){
+bool CNPC::checkStateTwo(){
     
     if (CCRANDOM_0_1() < 0.5f) {
         return true;
@@ -58,7 +66,7 @@ bool CNPCNode::checkStateTwo(){
     return false;
 }
 
-bool CNPCNode::checkStateThree(){
+bool CNPC::checkStateThree(){
     
     if (CCRANDOM_0_1() < 0.5f) {
         return true;

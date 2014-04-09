@@ -30,8 +30,9 @@ public:
     bool checkStateTwo();
     bool checkStateThree();
     
+    virtual void update(float dt);
 protected:
-    CBaseState* m_cBaseState;
+    CBaseState* m_cCurState;
 };
 
 #endif /* defined(__codeplace__CNPC__) */

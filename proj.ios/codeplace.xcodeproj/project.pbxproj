@@ -231,6 +231,8 @@
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		CE93A0F218F4E1A80034C319 /* CStateTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A0F018F4E1A80034C319 /* CStateTwo.cpp */; };
+		CE93A0F518F4E1B50034C319 /* CStateThree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE93A0F318F4E1B50034C319 /* CStateThree.cpp */; };
 		CED0B39118F4102C004997E5 /* CNPCNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED0B38F18F4102C004997E5 /* CNPCNode.cpp */; };
 		CED0B39418F41966004997E5 /* CBaseState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED0B39218F41966004997E5 /* CBaseState.cpp */; };
 		CED0B39718F419E9004997E5 /* CStateOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED0B39518F419E9004997E5 /* CStateOne.cpp */; };
@@ -724,6 +726,10 @@
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE93A0F018F4E1A80034C319 /* CStateTwo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CStateTwo.cpp; path = ../Classes/CStateTwo.cpp; sourceTree = "<group>"; };
+		CE93A0F118F4E1A80034C319 /* CStateTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CStateTwo.h; path = ../Classes/CStateTwo.h; sourceTree = "<group>"; };
+		CE93A0F318F4E1B50034C319 /* CStateThree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CStateThree.cpp; path = ../Classes/CStateThree.cpp; sourceTree = "<group>"; };
+		CE93A0F418F4E1B50034C319 /* CStateThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CStateThree.h; path = ../Classes/CStateThree.h; sourceTree = "<group>"; };
 		CED0B38F18F4102C004997E5 /* CNPCNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CNPCNode.cpp; path = ../Classes/CNPCNode.cpp; sourceTree = "<group>"; };
 		CED0B39018F4102C004997E5 /* CNPCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNPCNode.h; path = ../Classes/CNPCNode.h; sourceTree = "<group>"; };
 		CED0B39218F41966004997E5 /* CBaseState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CBaseState.cpp; path = ../Classes/CBaseState.cpp; sourceTree = "<group>"; };
@@ -1272,6 +1278,10 @@
 				CED0B39318F41966004997E5 /* CBaseState.h */,
 				CED0B39518F419E9004997E5 /* CStateOne.cpp */,
 				CED0B39618F419E9004997E5 /* CStateOne.h */,
+				CE93A0F018F4E1A80034C319 /* CStateTwo.cpp */,
+				CE93A0F118F4E1A80034C319 /* CStateTwo.h */,
+				CE93A0F318F4E1B50034C319 /* CStateThree.cpp */,
+				CE93A0F418F4E1B50034C319 /* CStateThree.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1871,6 +1881,7 @@
 				15A3D9201682F7D5002FB0C5 /* b2DistanceJoint.cpp in Sources */,
 				15A3D9211682F7D5002FB0C5 /* b2FrictionJoint.cpp in Sources */,
 				15A3D9221682F7D5002FB0C5 /* b2GearJoint.cpp in Sources */,
+				CE93A0F218F4E1A80034C319 /* CStateTwo.cpp in Sources */,
 				15A3D9231682F7D5002FB0C5 /* b2Joint.cpp in Sources */,
 				15A3D9241682F7D5002FB0C5 /* b2MouseJoint.cpp in Sources */,
 				15A3D9251682F7D5002FB0C5 /* b2PrismaticJoint.cpp in Sources */,
@@ -1882,6 +1893,7 @@
 				15A3D9391682F7D5002FB0C5 /* b2Rope.cpp in Sources */,
 				15A3D9951682F7F9002FB0C5 /* chipmunk.c in Sources */,
 				15A3D9971682F7F9002FB0C5 /* cpConstraint.c in Sources */,
+				CE93A0F518F4E1B50034C319 /* CStateThree.cpp in Sources */,
 				15A3D9981682F7F9002FB0C5 /* cpDampedRotarySpring.c in Sources */,
 				15A3D9991682F7F9002FB0C5 /* cpDampedSpring.c in Sources */,
 				15A3D99A1682F7F9002FB0C5 /* cpGearJoint.c in Sources */,
